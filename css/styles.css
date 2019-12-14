@@ -1,0 +1,219 @@
+body {
+  font-family: "BaroqueScript"; src: url('BaroqueScript.ttf');
+  background-color: black;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h4 {
+  padding-top: 10px;
+  color: #902923;
+}
+p{
+  font-size: 22px;
+}
+b{
+  color: #902923;
+}
+.logo {
+  width: 200px;
+    
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.logo1 {
+  width:900px;
+  height: 150px;
+  padding-right: 10px;
+}
+.img{
+  width: 300px;
+  height: 450px;
+}
+.img1 {
+  width: 1100px;
+  height: 500px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.img2 {
+  width: 350px;
+  height: 300px;
+}
+.imgmembers{
+  width: 300px;
+  height: 400px;
+}
+#name {
+	font-size: 50px; 
+	font-weight: bold; 
+	font-size: 100px;
+  color: white; 
+	padding-top: 15px; 
+	padding-right: 15px;
+}
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  height: 50rem;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.85;
+  z-index: 1;
+}
+
+#mainNav {
+  background-color:black; 
+  color:white; 
+  padding-left: 10px; 
+  padding-right: 800px;
+  color: #000;
+  transition: background-color 0.2s ease;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 0.9rem;
+  padding: 0.75rem 0;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover,
+#mainNav .navbar-nav .nav-item .nav-link:active {
+  color: #d6d9c9; 
+
+}
+
+ #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: white;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active {
+  color: #d6d9c9 !important;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+ #mainNav .navbar-nav .nav-item .nav-link {
+    color: black;
+    font-size: 18px;
+    padding: 0 1rem;
+  }
+
+  #mainNav .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
+  }
+  .dropdown-item:hover {
+  	background-color: #ff6663;
+  }
+
+.video-container {
+  background: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -99;
+}
+
+.video-container,
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border: none;
+} 
+  .flipcard {
+  background-color: transparent;
+  width: 600px;
+  height: 600px;
+  perspective: 1000px;
+}
+
+.flipcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flipcard:hover .flipcard-inner {
+  transform: rotateY(180deg);
+}
+
+.flipcard-front, .flipcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flipcard-front {
+  background-color: white;
+  color: black;
+}
+
+.flipcard-back {
+  background-color: #902923;
+  color: white;
+  transform: rotateY(180deg);
+}
+}
+.social-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 80%;
+  margin: 0 5px;
+}
+
+.copyrightstyle {
+   margin: 5px 0 0 0;
+   color: white;
+   text-align: center;
+   font-size: 18px;
+}
